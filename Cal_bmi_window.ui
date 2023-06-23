@@ -98,7 +98,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_2">
+   <widget class="QLineEdit" name="wrt_height">
     <property name="geometry">
      <rect>
       <x>200</x>
