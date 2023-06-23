@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>687</width>
+    <height>412</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>8</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <property name="animated">
+   <bool>true</bool>
+  </property>
+  <property name="unifiedTitleAndToolBarOnMac">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="b_notes">
+    <property name="geometry">
+     <rect>
+      <x>81</x>
+      <y>73</y>
+      <width>129</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Notes</string>
+    </property>
+   </widget>
+   <widget class="QCalendarWidget" name="calendar">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>10</y>
+      <width>391</width>
+      <height>241</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>391</width>
+      <height>151</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color : darkred;
+border : 1px solid black</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="l_tools">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>10</y>
+      <width>107</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600; color:#6d0036;&quot;&gt;Tool options&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="list">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>40</y>
+      <width>131</width>
+      <height>121</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="l_plans">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>170</y>
+      <width>145</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600; color:#6c0036;&quot;&gt;Plans for the day&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="add_p">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>200</y>
+      <width>141</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>+ Add</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="delete_p">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>230</y>
+      <width>141</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Delete</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="b_cal_bmi">
+    <property name="geometry">
+     <rect>
+      <x>81</x>
+      <y>41</y>
+      <width>129</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Calculation of BMI</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="b_password">
+    <property name="geometry">
+     <rect>
+      <x>81</x>
+      <y>104</y>
+      <width>129</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Password generating</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="inv_b">
+    <property name="geometry">
+     <rect>
+      <x>81</x>
+      <y>136</y>
+      <width>129</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Inventory manage</string>
+    </property>
+   </widget>
+   <zorder>list</zorder>
+   <zorder>l_tools</zorder>
+   <zorder>l_plans</zorder>
+   <zorder>add_p</zorder>
+   <zorder>delete_p</zorder>
+   <zorder>calendar</zorder>
+   <zorder></zorder>
+   <zorder>b_password</zorder>
+   <zorder>b_notes</zorder>
+   <zorder>b_cal_bmi</zorder>
+   <zorder>product_amount</zorder>
+   <zorder>product_uid</zorder>
+   <zorder>product_name</zorder>
+   <zorder>product_price</zorder>
+   <zorder>inv_b</zorder>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../../../../../Desktop/Photos/pictures/x2.qrc"/>
+  <include location="../../../../../Desktop/Photos/pictures/w1.qrc"/>
+  <include location="../../../../../Desktop/Photos/pictures/c1.qrc"/>
+ </resources>
+ <connections/>
+</ui>

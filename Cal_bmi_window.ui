@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Cal_bmi_window</class>
+ <widget class="QMainWindow" name="Cal_bmi_window">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>341</width>
+    <height>262</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="weight">
+    <property name="geometry">
+     <rect>
+      <x>61</x>
+      <y>41</y>
+      <width>119</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 20px; color : brown</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Body weight in kg:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="height">
+    <property name="geometry">
+     <rect>
+      <x>61</x>
+      <y>69</y>
+      <width>122</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 20px; color : brown</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Body height in cm:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button_find">
+    <property name="geometry">
+     <rect>
+      <x>61</x>
+      <y>106</y>
+      <width>261</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Find out your BMI</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button_clearing">
+    <property name="geometry">
+     <rect>
+      <x>61</x>
+      <y>146</y>
+      <width>261</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Clear</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="result">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>190</y>
+      <width>84</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size : 20px; color : brown</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Your BMI = &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="wrt_weight">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>40</y>
+      <width>121</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_2">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>69</y>
+      <width>121</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button_meaning">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>220</y>
+      <width>261</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>What does it mean</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="tool_name">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>10</y>
+      <width>197</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600; color:#6d0036;&quot;&gt;Calculation of BMI tool&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>190</y>
+      <width>55</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
