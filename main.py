@@ -123,6 +123,16 @@ class UI(QMainWindow):
         self.picture1.setPixmap(self.pixmap)
         self.picture2.setPixmap(self.pixmap)
 
+        for checkbox, lineedit in self.checkbox_lineedit_pairs:
+            x = int(81 * width_scale)  # Adjust the x-coordinate based on the scaling factor
+            y = int(200 * height_scale) + (30 * self.checkbox_lineedit_pairs.index((checkbox, lineedit)))  # Adjust the y-coordinate based on the scaling factor and the index
+
+            # Resize and move the checkbox
+            checkbox.setGeometry(x, y, int(16 * width_scale), int(16 * height_scale))
+
+            # Resize and move the line edit
+            lineedit.setGeometry(x + int(29 * width_scale), y, int(109 * width_scale), int(22 * height_scale))
+
         # Call the base class resizeEvent function
         super().resizeEvent(event)
 
