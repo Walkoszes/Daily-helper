@@ -95,6 +95,9 @@ class UI(QMainWindow):
     def resizeEvent(self, event):
         #event - helps adjust UI elements based on the new window size
 
+        global width_scale
+        global height_scale
+
         # Get the new size of the window
         new_size = event.size()
 
@@ -133,6 +136,11 @@ class UI(QMainWindow):
             # Resize and move the line edit
             lineedit.setGeometry(x + int(29 * width_scale), y, int(109 * width_scale), int(22 * height_scale))
 
+            delete_p_y = int(self.delete_p.y() * height_scale) + int(30*height_scale)
+
+            self.add_p.move(int(self.add_p.x() * width_scale), int((self.add_p.y() + 30) * height_scale))
+            self.delete_p.move(int(self.delete_p.x() * width_scale), int(delete_p_y * height_scale))
+
         # Call the base class resizeEvent function
         super().resizeEvent(event)
 
@@ -145,14 +153,14 @@ class UI(QMainWindow):
             lineedit = QLineEdit(self) #creating new line_edit
 
             # Calculate the position of the new checkbox and lineedit pair based on the counter
-            x = 81 #set the x coordination for checkboxes and line_edits
-            y = 200 + (30 * self.pair_counter) #calculating new y for every checkbox and line_edit
+            x = int(81 * width_scale) #set the x coordination for checkboxes and line_edits
+            y = int(200 * height_scale) + (30  * self.pair_counter) #calculating new y for every checkbox and line_edit
 
             # Set the properties of the checkbox
-            checkbox.setGeometry(x, y, 16, 16)
+            checkbox.setGeometry(x, y, int(16*width_scale), int(16*height_scale))
 
             # Set the properties of the line edit
-            lineedit.setGeometry(x + 29, y, 109, 22)
+            lineedit.setGeometry(x + 29, y, int(109*width_scale), int(22*height_scale))
 
             # Add the checkbox and line edit to the main window
             checkbox.show()
